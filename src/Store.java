@@ -1,18 +1,17 @@
 public class Store {
-    public static void main(String[] args) {
-        int p1 = 15;
-        int p2 = 10;
-        int p3 = 5;
+   
+       static final int  total_productos = 3;
+       static final int[] precios ={15,10,5};
+      static final int[] cantidad = {2,3,4};
+       static final int venta_estable = 50;
+       public static void main(String[] args) {
+        int totalSales=0;
 
-        int total1 = p1 * 2;
-        int total2 = p2 * 3;
-        int total3 = p3 * 4;
-
-        int totalSales = total1 + total2 + total3;
-
-        if (totalSales > 50) {
-            System.out.println("Good sales performance");
-        } else {
+        for( int i=0; i<total_productos; i++){totalSales += precios [i] * cantidad [i];
+        }
+            if (totalSales> venta_estable){
+                System.out.println("good sales performance");
+            }else {
             System.out.println("Low sales performance");
         }
     }

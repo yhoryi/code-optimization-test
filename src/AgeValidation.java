@@ -1,12 +1,15 @@
+import java.util.Scanner;
 public class AgeValidation {
+    private static final int AGE_LIMIT =18;
     public static void main(String[] args) {
-        int age = 18;
-        
-        if (age >= 18) {
+        Scanner scanner =new Scanner (system.in);
+        System.out.println("enter yor age");
+        int age = scanner.nex
+        if (AGE_LIMIT >= 18) {
             System.out.println("Access granted");
         }
         
-        if (age < 18) {
+        if (AGE_LIMIT < 18) {
             System.out.println("Access denied");
         }
     }
