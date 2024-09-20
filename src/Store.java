@@ -10,9 +10,9 @@ public class Store {
         for( int i=0; i<total_productos; i++){totalSales += precios [i] * cantidad [i];
         }
             if (totalSales> venta_estable){
-                System.out.println("good sales performance");
+                System.out.println("buen desempeño en ventas");
             }else {
-            System.out.println("Low sales performance");
+            System.out.println("Bajo rendimiento de ventas");
         }
     }
 }
